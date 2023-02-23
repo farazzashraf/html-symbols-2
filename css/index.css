@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(rgb(0, 0, 34), rgb(0, 0, 31));
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    display: none;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+}
+
+header>div div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header>div div a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+header>div div a:hover {
+    color: aquamarine;
+}
+
+header>div div:hover a:not(:hover) {
+    opacity: 0.3;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 3rem 4rem;
+    margin-top: 5rem;
+}
+
+main p {
+    font-size: 3rem;
+    color: white;
+}
+
+main img {
+    width: 50rem;
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 0 3rem;
+        /* margin-right: 13rem; */
+        white-space: nowrap;
+    }
+
+    .heading a h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        right: 5rem;
+    }
+
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-top: -0.8rem;
+        position: relative;
+        right: 2rem;
+    }
+
+    .menu-btn span {
+        background-color: white;
+        width: 2.5rem;
+        height: 0.2rem;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    main {
+        margin: 0 2rem;
+        margin-top: 1rem;
+    }
+
+    main p {
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    main img {
+        display: none;
+    }
+
+    nav {
+        /* display: none; */
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        /* margin-top: -4.4rem; */
+        padding-top: 2rem;
+        padding-bottom: 9.8rem;
+        height: 100%;
+        text-align: center;
+        background-color: black;
+    }
+
+    nav button {
+        float: right;
+        margin: 0 2rem;
+    }
+
+    nav>div {
+        margin-top: -1.4rem;
+    }
+
+    nav>div a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    nav>div a h4 {
+        margin: 5rem 0;
+        font-family: 'poppins', sans-serif;
+        font-size: 1.5rem;
+    }
+}
